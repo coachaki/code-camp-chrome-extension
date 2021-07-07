@@ -9,3 +9,4 @@ chrome.runtime.onInstalled.addListener(() => {
     });
     console.log('Adding item to context menu.')
 });
+
