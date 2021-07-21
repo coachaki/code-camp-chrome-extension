@@ -1,4 +1,5 @@
 let color = '#3aa757';
+let connections = {};
 
 chrome.runtime.onInstalled.addListener(() => {
     chrome.storage.sync.set({ color });
@@ -18,6 +19,47 @@ chrome.contextMenus.onClicked.addListener(async () => {
         target: { tabId: tab.id },
         function: setPageBackgroundColor,
     });
+});
+
+chrome.runtime.onConnect.addListener(function (port) {
+
+    let extensionListener = function (message, sender, sendResponse) {
+
+        console.log('message parsing');
+
+        // The original connection event doesn't include the tab ID of the
+        // DevTools page, so we need to send it explicitly.
+        if (message.name == "init") {
+          connections[message.tabId] = port;
+          console.log(connections);
+          return;
+        }
+
+        if (message.name == "changeColor") {
+          console.log(connections, message);
+            chrome.scripting.executeScript({
+                target: { tabId: message.tabId },
+                function: setPageBackgroundColor,
+            });
+        }
+    }
+
+    // Listen to messages sent from the DevTools page
+    port.onMessage.addListener(extensionListener);
+
+    port.onDisconnect.addListener(function(port) {
+        port.onMessage.removeListener(extensionListener);
+
+        var tabs = Object.keys(connections);
+        for (var i=0, len=tabs.length; i < len; i++) {
+          if (connections[tabs[i]] == port) {
+            delete connections[tabs[i]]
+            break;
+          }
+        }
+    });
+
+    console.log("devtools listener added");
 });
 
 
