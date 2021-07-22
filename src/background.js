@@ -7,13 +7,14 @@ chrome.runtime.onInstalled.addListener(() => {
     chrome.contextMenus.create({
         "id": "gettingStarted",
         "title": "Getting Started"
-    });
-
-    chrome.contextMenus.create({ title: 'Set Background Color', id: 'setBackgroundColor', parentId: 'gettingStarted' }, function () {
-        console.log('context menu added');
-    });
-    chrome.contextMenus.create({ title: 'Console Log Click Data', id: 'consoleLogClickData', parentId: 'gettingStarted' }, function () {
-        console.log('context menu added');
+    }, function () {
+        // add the children items in the callback function since we only want to create these if the parent item creation succeeds.
+        chrome.contextMenus.create({ title: 'Set Background Color', id: 'setBackgroundColor', parentId: 'gettingStarted' }, function () {
+            console.log('setBackgroundColor item added.');
+        });
+        chrome.contextMenus.create({ title: 'Console Log Click Data', id: 'consoleLogClickData', parentId: 'gettingStarted' }, function () {
+            console.log('consoleLogClickData item added.');
+        });
     });
 
     console.log('Adding item to context menu 2.')
