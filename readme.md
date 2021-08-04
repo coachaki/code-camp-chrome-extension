@@ -10,6 +10,12 @@ Chrome recently upgraded their manifest version to v3, and we will be working th
     - perform `git checkout ch10-2` to pull the code containing tasks 1 and 2
 3. Add the same button to the devtools panel.
 
+## Challenge 11
+
+Working off of Challenge 10 Task 2, let's create an extension that interacts with Omni CMS.
+
+1. Add a context menu item that links you to the published page when you right click on a staging file.
+
 ## Reference
 
 - Manifest: https://developer.chrome.com/docs/extensions/mv3/manifest/
