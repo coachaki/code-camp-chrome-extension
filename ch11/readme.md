@@ -18,4 +18,6 @@ If you didn't already allow for multiple publish outputs, then add the functiona
 ## (Maybe) Helpful Resources
 
 - Omni CMS API reference: https://developers.omniupdate.com/
-- Context Menus: https://developer.chrome.com/docs/extensions/reference/contextMenus/
+- Context Menu API: https://developer.chrome.com/docs/extensions/reference/contextMenus/
+- Storage API: https://developer.chrome.com/docs/extensions/reference/storage/
+- Scripting API: https://developer.chrome.com/docs/extensions/reference/scripting/
