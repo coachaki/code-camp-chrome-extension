@@ -19,6 +19,7 @@ If you didn't already allow for multiple publish outputs, then add the functiona
 ## (Maybe) Helpful Resources
 
 - Omni CMS API reference: https://developers.omniupdate.com/
+  - Files Published Endpoint: https://developers.omniupdate.com/#!/Files/get_files_published
 - Context Menu API: https://developer.chrome.com/docs/extensions/reference/contextMenus/
 - Storage API: https://developer.chrome.com/docs/extensions/reference/storage/
 - Scripting API: https://developer.chrome.com/docs/extensions/reference/scripting/
