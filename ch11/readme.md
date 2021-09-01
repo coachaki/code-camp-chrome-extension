@@ -10,6 +10,7 @@ Things to think about:
 
 - How do you get the publish domain?
 - How do you get the publish extension?
+- Which links does it work on? (e.g., folder, pcf, inc, js, png, jpg)
 
 ## Part 2: Expand to support multiple publish outputs
 
