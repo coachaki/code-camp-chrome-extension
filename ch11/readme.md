@@ -2,13 +2,18 @@
 
 Working off of Challenge 10 Task 2, let's create an extension that interacts with Omni CMS.
 
-1. Add a context menu item that links you to the published page when you right click on a staging file.
+## Part 1: Context Menu Item for "Published Page"
+
+Add a context menu item that links you to the published page when you right click on a staging file.
 
 Things to think about:
 
 - How do you get the publish domain?
 - How do you get the publish extension?
-- What if it has multiple outputs? Link to the first or links for all?
+
+## Part 2: Expand to support multiple publish outputs
+
+If you didn't already allow for multiple publish outputs, then add the functionality here. How do you get them all?
 
 ## (Maybe) Helpful Resources
 
