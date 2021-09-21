@@ -23,3 +23,7 @@ If you didn't already allow for multiple publish outputs, then add the functiona
 - Context Menu API: https://developer.chrome.com/docs/extensions/reference/contextMenus/
 - Storage API: https://developer.chrome.com/docs/extensions/reference/storage/
 - Scripting API: https://developer.chrome.com/docs/extensions/reference/scripting/
+
+## Other People's Works
+
+- Jorgen: https://github.com/jamesjtuckbc/code-camp-chrome-extension
