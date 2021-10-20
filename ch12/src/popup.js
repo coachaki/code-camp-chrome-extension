@@ -22,3 +22,5 @@ function setPageBackgroundColor() {
         document.body.style.backgroundColor = color;
     });
 }
+
+document.body.append(Date.now());
