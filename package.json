@@ -1,0 +1,23 @@
+{
+  "name": "code-camp-chrome-extension",
+  "version": "1.0.0",
+  "description": "chrome extension workshop for code camp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coachaki/code-camp-chrome-extension.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/coachaki/code-camp-chrome-extension/issues"
+  },
+  "homepage": "https://github.com/coachaki/code-camp-chrome-extension#readme",
+  "devDependencies": {
+    "eslint": "^8.0.1",
+    "eslint-config-google": "^0.14.0"
+  }
+}
