@@ -1,0 +1,20 @@
+popup ux
+
+- bookmarks
+- list of relevant xsl files for fast access
+- multiedit interface? kind of like the page parameters gadget
+- final check (for content editors)
+- list of checked out pages with an action for checking in all of them
+
+- status checker of time-consuming tasks
+- notification history
+
+- dsn, rda manual version
+
+- customer has scheduled publish, something is broken, reschedule is needed after "checking out"
+  - a "reschedule" functionality
+
+- "turn off the lights" dark theme
+
+
+- add notification sounds
